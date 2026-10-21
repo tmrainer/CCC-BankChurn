@@ -1,0 +1,77 @@
+{
+  "modelo_final": "HistGradientBoosting",
+  "umbral": 0.6740297151260193,
+  "recall_objetivo_cv": 0.9,
+  "test": {
+    "umbral": 0.6740297151260193,
+    "recall": 0.8892307692307693,
+    "precision": 0.932258064516129,
+    "f1": 0.9102362204724409,
+    "roc_auc": 0.9918509474065029,
+    "pr_auc": 0.964852939998272,
+    "n_marcados": 310
+  },
+  "test_confusion": {
+    "verdaderos_positivos (abandonos detectados)": 289,
+    "falsos_negativos (abandonos NO detectados)": 36,
+    "falsos_positivos (fieles marcados por error)": 21,
+    "verdaderos_negativos (fieles bien clasificados)": 1680
+  },
+  "cv_con_balanceo": {
+    "Regresión logística": {
+      "recall": 0.8602,
+      "precision": 0.5489,
+      "f1": 0.67,
+      "roc_auc": 0.9344,
+      "pr_auc": 0.7709,
+      "accuracy": 0.8637
+    },
+    "Random Forest": {
+      "recall": 0.8779,
+      "precision": 0.8925,
+      "f1": 0.885,
+      "roc_auc": 0.9894,
+      "pr_auc": 0.9486,
+      "accuracy": 0.9633
+    },
+    "HistGradientBoosting": {
+      "recall": 0.9255,
+      "precision": 0.8858,
+      "f1": 0.9051,
+      "roc_auc": 0.993,
+      "pr_auc": 0.9688,
+      "accuracy": 0.9688
+    }
+  },
+  "cv_sin_balanceo": {
+    "Regresión logística": {
+      "recall": 0.6229,
+      "precision": 0.7857,
+      "f1": 0.6944,
+      "roc_auc": 0.9337,
+      "pr_auc": 0.7824,
+      "accuracy": 0.912
+    },
+    "Random Forest": {
+      "recall": 0.8042,
+      "precision": 0.9256,
+      "f1": 0.8604,
+      "roc_auc": 0.9892,
+      "pr_auc": 0.9512,
+      "accuracy": 0.9582
+    },
+    "HistGradientBoosting": {
+      "recall": 0.891,
+      "precision": 0.9326,
+      "f1": 0.9112,
+      "roc_auc": 0.993,
+      "pr_auc": 0.9689,
+      "accuracy": 0.9721
+    }
+  },
+  "umbrales_por_modelo": {
+    "Regresión logística": 0.3912528857241308,
+    "Random Forest": 0.46773366694738955,
+    "HistGradientBoosting": 0.6740297151260193
+  }
+}

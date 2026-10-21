@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/*.csv
+data/raw/*.zip
+.DS_Store
+data/processed/*.csv
+outputs/*.joblib
+outputs/probas_*.csv
+CLAUDE.md
+
+# Archivos de asistentes de IA: nunca versionar
+AGENTS.md
+.claude/
+.claude/**
+**/CLAUDE.md
+**/AGENTS.md
